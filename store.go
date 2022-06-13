@@ -9,7 +9,7 @@ import (
 
 // ListObjectEvent - handles async listing objects of objectstore
 type ListObjectEvent struct {
-	Object cid.Cid
+	Object string
 	Error  error
 }
 
