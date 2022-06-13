@@ -1,15 +1,15 @@
 package objectstore
 
 import (
-	"crypto/sha256"
-	"fmt"
+	cid "github.com/ipfs/go-cid"
+	mh "github.com/multiformats/go-multihash"
 )
 
-const _formatHex = "%x"
+const _seperationLength = 8
 
-type DigestFunc func([]byte) string
-
-var DefaultDigestFunc DigestFunc = func(data []byte) string {
-	sum := sha256.Sum256(data)
-	return fmt.Sprintf(_formatHex, sum)
+var DigestPrefix = cid.Prefix{
+	Version:  1,
+	Codec:    cid.Raw,
+	MhType:   mh.SHA2_256,
+	MhLength: -1,
 }

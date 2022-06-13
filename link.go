@@ -2,7 +2,6 @@ package objectstore
 
 import "fmt"
 
-const _seperationLength = 2
 const _formatLink = "%s/%s/%s"
 
 type LinkFunc func(string) string
