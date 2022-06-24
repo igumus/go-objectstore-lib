@@ -3,6 +3,7 @@ module github.com/igumus/go-objectstore-lib
 go 1.17
 
 require (
+	github.com/golang/mock v1.6.0
 	github.com/ipfs/go-cid v0.2.0
 	github.com/multiformats/go-multihash v0.0.15
 )
@@ -17,5 +18,5 @@ require (
 	github.com/multiformats/go-multibase v0.0.3 // indirect
 	github.com/multiformats/go-varint v0.0.6 // indirect
 	golang.org/x/crypto v0.0.0-20210506145944-38f3c27a63bf // indirect
-	golang.org/x/sys v0.0.0-20210309074719-68d13333faf2 // indirect
+	golang.org/x/sys v0.0.0-20210510120138-977fb7262007 // indirect
 )
